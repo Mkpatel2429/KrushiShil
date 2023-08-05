@@ -1,0 +1,40 @@
+.landing {
+	display: flex;
+	background-color: lightgreen;
+	height: 80vh;
+	weight: 100%;
+	position: relative;
+}
+.left {
+	display: flex;
+	width: 50%;
+	background-color: lightgreen;
+}
+.right {
+	display: flex;
+	width: 50%;
+	background-color: lightgreen;
+}
+
+.left p {
+	font-size: 20px;
+	padding-top: 33vh;
+	margin-left: 8vh;
+	font-weight: 500;
+	color: black;
+	justify-content: space-between;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.left p span {
+	font-size: 30px;
+	font-weight: 600;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	color: darkgreen;
+}
+
+.right img {
+	margin-left: 35vh;
+	width: 70%;
+}
