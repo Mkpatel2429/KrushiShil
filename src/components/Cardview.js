@@ -1,212 +1,189 @@
 import React from "react";
-import "M:/CP-3/soiltoseed/src/css/card.css";
-import "M:/CP-3/soiltoseed/src/js/cardviewjs.js";
+import image1 from "M:/CP-3/soiltoseed/src/assets/Image1 (1).jpg";
+// import image2 from "M:/CP-3/soiltoseed/src/assets/Image1 (2).jpg";
+// import image3 from "M:/CP-3/soiltoseed/src/assets/Image1 (3).jpg";
+
 function Cardview() {
 	return (
 		<div>
-			<div className="container">
-				<h3 className="title"> organic products </h3>
+			<h2 classNameName="Header mt-5" align="center">
+				Latest Seeds
+			</h2>
+			<div classNameName="container">
+				<div classNameName="row">
+					<div classNameName="col-lg-5 mt-5 mx-auto">
+						<div classNameName="card" style={{ width: "20rem" }}>
+							<img
+								classNameName="card-img-top"
+								src={image1}
+								alt="Seeds"
+								style={{ height: "200px" }}
+							/>
 
-				<div className="products-container">
-					<div className="product" data-name="p-1">
-						<img src="images/1.png" alt="" />
-						<h3>strawberries</h3>
-						<div className="price">$2.00</div>
+							<div classNameName="card-body">
+								<h5 classNameName="card-title" style={{ color: "black" }}>
+									Seeds
+								</h5>
+								<p classNameName="card-text">
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</p>
+
+								<button
+									type="button"
+									className="btn btn-primary"
+									data-toggle="modal"
+									data-target="#exampleModalCenter"
+								>
+									Show More
+								</button>
+
+								<div
+									className="modal fade"
+									id="exampleModalCenter"
+									tabindex="-1"
+									role="dialog"
+									aria-labelledby="exampleModalCenterTitle"
+									aria-hidden="true"
+								>
+									<div
+										className="modal-dialog modal-dialog-centered"
+										role="document"
+									>
+										<div className="modal-content">
+											<div className="modal-header">
+												<h5 className="modal-title" id="exampleModalLongTitle">
+													Seed
+												</h5>
+												<button
+													type="button"
+													className="close"
+													data-dismiss="modal"
+													aria-label="Close"
+												>
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div className="modal-body">
+												Some quick example text to build on the card title and
+												make up the bulk of the card's content.
+											</div>
+											<div className="modal-footer">
+												<button
+													type="button"
+													className="btn btn-secondary"
+													data-dismiss="modal"
+												>
+													Close
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div className="product" data-name="p-2">
-						<img src="images/2.png" alt="" />
-						<h3>onions</h3>
-						<div className="price">$2.00</div>
-					</div>
+					{/* <div classNameName="col-lg-4 mt-4">
+						<div classNameName="card" style={{ width: "20rem" }}>
+							<img
+								classNameName="card-img-top"
+								src={image2}
+								alt="Water Service"
+								style={{ height: "200px" }}
+							/>
 
-					<div className="product" data-name="p-3">
-						<img src="images/3.png" alt="" />
-						<h3>tomatoes</h3>
-						<div className="price">$2.00</div>
+							<div classNameName="card-body">
+								<h5 classNameName="card-title" style={{ color: "black" }}>
+									Seeds
+								</h5>
+								<p classNameName="card-text">
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</p>
+							</div>
+						</div>
 					</div>
+					<div classNameName="col-lg-4 mt-4">
+						<div classNameName="card" style={{ width: "20rem" }}>
+							<img
+								classNameName="card-img-top"
+								src={image3}
+								alt="Water Service"
+								style={{ height: "200px" }}
+							/>
 
-					<div className="product" data-name="p-4">
-						<img src="images/4.png" alt="" />
-						<h3>brinjal</h3>
-						<div className="price">$2.00</div>
+							<div classNameName="card-body">
+								<h5 classNameName="card-title" style={{ color: "black" }}>
+									Seeds
+								</h5>
+								<p classNameName="card-text">
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</p>
+							</div>
+						</div>
 					</div>
+					<div classNameName="col-lg-4 mt-4">
+						<div classNameName="card" style={{ width: "20rem" }}>
+							<img
+								classNameName="card-img-top"
+								src={image2}
+								alt="Water Service"
+								style={{ height: "200px" }}
+							/>
 
-					<div className="product" data-name="p-5">
-						<img src="images/5.png" alt="" />
-						<h3>broccoli</h3>
-						<div className="price">$2.00</div>
+							<div classNameName="card-body">
+								<h5 classNameName="card-title" style={{ color: "black" }}>
+									Seeds
+								</h5>
+								<p classNameName="card-text">
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</p>
+							</div>
+						</div>
 					</div>
+					<div classNameName="col-lg-4 mt-4">
+						<div classNameName="card" style={{ width: "20rem" }}>
+							<img
+								classNameName="card-img-top"
+								src={image1}
+								alt="Water Service"
+								style={{ height: "200px" }}
+							/>
 
-					<div className="product" data-name="p-6">
-						<img src="images/6.png" alt="" />
-						<h3>potatoes</h3>
-						<div className="price">$2.00</div>
+							<div classNameName="card-body">
+								<h5 classNameName="card-title" style={{ color: "black" }}>
+									Seeds
+								</h5>
+								<p classNameName="card-text">
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</p>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
+					<div classNameName="col-lg-4 mt-4">
+						<div classNameName="card" style={{ width: "20rem" }}>
+							<img
+								classNameName="card-img-top"
+								src={image3}
+								alt="Water Service"
+								style={{ height: "200px" }}
+							/>
 
-			<div className="products-preview">
-				<div className="preview" data-target="p-1">
-					<i className="fas fa-times"></i>
-					<img src="images/1.png" alt="" />
-					<h3>organic strawberries</h3>
-					<div className="stars">
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star-half-alt"></i>
-						<span>( 250 )</span>
-					</div>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequatur, dolorem.
-					</p>
-					<div className="price">$2.00</div>
-					<div className="buttons">
-						<a href="/" className="buy">
-							buy now
-						</a>
-						<a href="/" className="cart">
-							add to cart
-						</a>
-					</div>
-				</div>
-
-				<div className="preview" data-target="p-2">
-					<i className="fas fa-times"></i>
-					<img src="images/2.png" alt="" />
-					<h3>organic onions</h3>
-					<div className="stars">
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star-half-alt"></i>
-						<span>( 250 )</span>
-					</div>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequatur, dolorem.
-					</p>
-					<div className="price">$2.00</div>
-					<div className="buttons">
-						<a href="/" className="buy">
-							buy now
-						</a>
-						<a href="/" className="cart">
-							add to cart
-						</a>
-					</div>
-				</div>
-
-				<div className="preview" data-target="p-3">
-					<i className="fas fa-times"></i>
-					<img src="images/3.png" alt="" />
-					<h3>organic tomatoes</h3>
-					<div className="stars">
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star-half-alt"></i>
-						<span>( 250 )</span>
-					</div>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequatur, dolorem.
-					</p>
-					<div className="price">$2.00</div>
-					<div className="buttons">
-						<a href="/" className="buy">
-							buy now
-						</a>
-						<a href="/" className="cart">
-							add to cart
-						</a>
-					</div>
-				</div>
-
-				<div className="preview" data-target="p-4">
-					<i className="fas fa-times"></i>
-					<img src="images/4.png" alt="" />
-					<h3>organic brinjal</h3>
-					<div className="stars">
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star-half-alt"></i>
-						<span>( 250 )</span>
-					</div>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequatur, dolorem.
-					</p>
-					<div className="price">$2.00</div>
-					<div className="buttons">
-						<a href="/" className="buy">
-							buy now
-						</a>
-						<a href="/" className="cart">
-							add to cart
-						</a>
-					</div>
-				</div>
-
-				<div className="preview" data-target="p-5">
-					<i className="fas fa-times"></i>
-					<img src="images/5.png" alt="" />
-					<h3>organic broccoli</h3>
-					<div className="stars">
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star-half-alt"></i>
-						<span>( 250 )</span>
-					</div>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequatur, dolorem.
-					</p>
-					<div className="price">$2.00</div>
-					<div className="buttons">
-						<a href="/" className="buy">
-							buy now
-						</a>
-						<a href="/" className="cart">
-							add to cart
-						</a>
-					</div>
-				</div>
-
-				<div className="preview" data-target="p-6">
-					<i className="fas fa-times"></i>
-					<img src="images/6.png" alt="" />
-					<h3>organic potatoes</h3>
-					<div className="stars">
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star"></i>
-						<i className="fas fa-star-half-alt"></i>
-						<span>( 250 )</span>
-					</div>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Consequatur, dolorem.
-					</p>
-					<div className="price">$2.00</div>
-					<div className="buttons">
-						<a href="/" className="buy">
-							buy now
-						</a>
-						<a href="/" className="cart">
-							add to cart
-						</a>
-					</div>
+							<div classNameName="card-body">
+								<h5 classNameName="card-title" style={{ color: "black" }}>
+									Seeds
+								</h5>
+								<p classNameName="card-text">
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</p>
+							</div>
+						</div>
+					</div> */}
 				</div>
 			</div>
 		</div>
