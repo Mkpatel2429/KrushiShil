@@ -1,5 +1,10 @@
 import React from "react";
 import logo from "M:/CP-3/soiltoseed/src/assets/logo.png";
+import Cardview from "./Cardview";
+import Companyslider from "./Companyslider";
+import Footer from "./Footer";
+import Soilcal from "./Soilcal";
+import Corousel from "./Corousel";
 
 function Homepage() {
 	return (
@@ -36,10 +41,26 @@ function Homepage() {
 									Contact Us
 								</a>
 							</li>
+							<a
+								href="/Login"
+								className="btn btn-outline-success me-2"
+								role="button"
+								style={{
+									marginLeft: 920,
+									paddingLeft: 20,
+									paddingRight: 20,
+								}}>
+								Login
+							</a>
 						</ul>
 					</div>
 				</div>
 			</nav>
+			<Corousel />
+			<Cardview />
+			<Soilcal />
+			<Companyslider />
+			<Footer />
 		</div>
 	);
 }

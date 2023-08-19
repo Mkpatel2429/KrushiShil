@@ -8,8 +8,8 @@ function Footer() {
 				class="text-center text-lg-start text-dark"
 				style={{ backgroundColor: "#ECEFF1" }}>
 				<section
-					class="d-flex justify-content-between p-4 text-white"
-					style={{ backgroundColor: "#21D192" }}>
+					class="d-flex justify-content-between p-4 text-dark"
+					style={{ backgroundColor: "rgb(102, 188, 102)" }}>
 					<div class="me-5">
 						<span>Get connected with us on social networks:</span>
 					</div>
@@ -40,12 +40,16 @@ function Footer() {
 					<div class="container text-center text-md-start mt-5">
 						<div class="row mt-3">
 							<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-								<h6 class="text-uppercase fw-bold">Company name</h6>
+								<h6
+									class="text-uppercase fw-bold"
+									style={{ color: "Darkgreen" }}>
+									Company name
+								</h6>
 								<hr
 									class="mb-4 mt-0 d-inline-block mx-auto"
 									style={{
 										width: "60px",
-										backgroundColor: "#7c4dff",
+										backgroundColor: "rgb(122, 242, 122)",
 										height: "2px",
 									}}
 								/>
@@ -57,12 +61,16 @@ function Footer() {
 							</div>
 
 							<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-								<h6 class="text-uppercase fw-bold">Products</h6>
+								<h6
+									class="text-uppercase fw-bold"
+									style={{ color: "Darkgreen" }}>
+									Products
+								</h6>
 								<hr
 									class="mb-4 mt-0 d-inline-block mx-auto"
 									style={{
 										width: "60px",
-										backgroundColor: "#7c4dff",
+										backgroundColor: "rgb(122, 242, 122)",
 										height: "2px",
 									}}
 								/>
@@ -89,12 +97,16 @@ function Footer() {
 							</div>
 
 							<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-								<h6 class="text-uppercase fw-bold">Useful links</h6>
+								<h6
+									class="text-uppercase fw-bold"
+									style={{ color: "Darkgreen" }}>
+									Useful links
+								</h6>
 								<hr
 									class="mb-4 mt-0 d-inline-block mx-auto"
 									style={{
 										width: "60px",
-										backgroundColor: "#7c4dff",
+										backgroundColor: "rgb(122, 242, 122)",
 										height: "2px",
 									}}
 								/>
@@ -121,12 +133,16 @@ function Footer() {
 							</div>
 
 							<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-								<h6 class="text-uppercase fw-bold">Contact</h6>
+								<h6
+									class="text-uppercase fw-bold"
+									style={{ color: "Darkgreen" }}>
+									Contact
+								</h6>
 								<hr
 									class="mb-4 mt-0 d-inline-block mx-auto"
 									style={{
 										width: "60px",
-										backgroundColor: "#7c4dff",
+										backgroundColor: "rgb(122, 242, 122)",
 										height: "2px",
 									}}
 								/>
@@ -149,10 +165,13 @@ function Footer() {
 
 				<div
 					class="text-center p-3"
-					style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
-					© 2020 Copyright:
-					<a class="text-dark" href="https://mdbootstrap.com/">
-						MDBootstrap.com
+					style={{ backgroundColor: "rgb(102, 188, 102)" }}>
+					© 2023 Copyright:
+					<a
+						class="text-dark"
+						href="https://mdbootstrap.com/"
+						style={{ color: "Darkgreen" }}>
+						SoilToSeeds
 					</a>
 				</div>
 			</footer>

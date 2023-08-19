@@ -1,3 +1,6 @@
+body {
+	background: linear-gradient(30deg, lightgreen, #fff, lightgreen);
+}
 .Header {
 	font-size: 40px;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -59,8 +62,8 @@
 	border-radius: 25px;
 	padding: 0.6rem;
 	margin-bottom: 5vh;
-	background: #ddd;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	background: whitesmoke;
+	box-shadow: darkgreen 0px 5px 15px;
 }
 .item {
 	animation: animate 25s alternate linear infinite;
@@ -89,4 +92,8 @@
 
 .footer {
 	margin-top: 10vh;
+}
+
+.form-group {
+	border-color: lightgreen;
 }

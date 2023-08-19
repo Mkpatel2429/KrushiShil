@@ -1,20 +1,23 @@
 import "./App.css";
-import Cardview from "./components/Cardview";
-import Companyslider from "./components/Companyslider";
-import Corousel from "./components/Corousel";
-import Footer from "./components/Footer";
 import Homepage from "./components/Homepage";
-import Soilcal from "./components/Soilcal";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import Contactpage from "./components/Contactpage";
+import Aboutuspage from "./components/Aboutuspage";
 
 function App() {
 	return (
 		<div className="App">
-			<Homepage />
-			<Corousel />
-			<Cardview />
-			<Soilcal />
-			<Companyslider />
-			<Footer />
+			<Router>
+				<Routes>
+					<Route path="/Login" element={<Login />}></Route>
+					<Route path="/" element={<Homepage />}></Route>
+					<Route path="/Register" element={<Register />}></Route>
+					<Route path="/ContactUs" element={<Contactpage />}></Route>
+					<Route path="/AboutUs" element={<Aboutuspage />}></Route>
+				</Routes>
+			</Router>
 		</div>
 	);
 }
