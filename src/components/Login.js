@@ -1,6 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Login() {
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log(email, password);
+		fetch("http://localhost:5000/Login", {
+			method: "POST",
+			crossDomain: true,
+			headers: {
+				"Content-Type": "application/json",
+				"Access-Control-Allow-Origin": "*",
+				Accept: "application/json",
+			},
+			body: JSON.stringify({
+				email,
+				password,
+			}),
+		})
+			.then((res) => res.json())
+			.then((data) => {
+				if (data.status === "ok") {
+					alert("Login Successfull");
+				} else {
+					alert("Login Unsuccessfull");
+				}
+			});
+	};
+
 	return (
 		<div>
 			<h1
@@ -22,7 +51,7 @@ function Login() {
 							/>
 						</div>
 						<div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-							<form>
+							<form onSubmit={handleSubmit}>
 								<div className="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
 									<p
 										className="lead fw-normal mb-0 me-3"
@@ -63,6 +92,8 @@ function Login() {
 										id="form3Example3"
 										className="form-control form-control-lg"
 										placeholder="Enter a Email ID"
+										onChange={(e) => setEmail(e.target.value)}
+										required
 									/>
 								</div>
 
@@ -72,6 +103,8 @@ function Login() {
 										id="form3Example4"
 										className="form-control form-control-lg"
 										placeholder="Enter a Password"
+										onChange={(e) => setPassword(e.target.value)}
+										required
 									/>
 								</div>
 
@@ -100,7 +133,7 @@ function Login() {
 
 								<div className="text-center text-lg-start mt-4 pt-2">
 									<button
-										type="button"
+										type="submit"
 										className="btn btn-outline-success btn-lg"
 										style={{
 											paddingLeft: "2.5rem",

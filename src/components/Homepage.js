@@ -9,51 +9,55 @@ import Corousel from "./Corousel";
 function Homepage() {
 	return (
 		<div>
-			<nav className="navbar navbar-expand-lg navbar-light bg-light">
-				<div className="container-fluid">
-					<a className="navbar-brand" href="/Homepage">
-						<img src={logo} alt="" srcset="" style={{ width: "55px" }} />
-					</a>
-					<button
-						className="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span className="navbar-toggler-icon"></span>
-					</button>
-					<div className="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul className="navbar-nav me-auto mb-2 mb-lg-0">
-							<li className="nav-item">
-								<a className="nav-link active" aria-current="page" href="/Home">
-									Home
-								</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="/AboutUs">
-									About Us
-								</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="/ContactUs" tabindex="-1">
-									Contact Us
-								</a>
-							</li>
-							<a
-								href="/Login"
-								className="btn btn-outline-success me-2"
-								role="button"
-								style={{
-									marginLeft: 920,
-									paddingLeft: 20,
-									paddingRight: 20,
-								}}>
-								Login
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a className="navbar-brand" href="/Homepage">
+					<img
+						src={logo}
+						alt=""
+						srcset=""
+						style={{ width: "55px", marginLeft: "10px" }}
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li className="nav-item">
+							<a className="nav-link active" aria-current="page" href="/Home">
+								Home
 							</a>
-						</ul>
-					</div>
+						</li>
+						<li className="nav-item">
+							<a className="nav-link" href="/AboutUs">
+								About Us
+							</a>
+						</li>
+						<li className="nav-item">
+							<a className="nav-link" href="/ContactUs" tabindex="-1">
+								Contact Us
+							</a>
+						</li>
+						<a
+							href="/Login"
+							className="btn btn-outline-success me-2"
+							role="button"
+							style={{
+								marginLeft: "10px",
+								paddingLeft: "20px",
+								paddingRight: "20px",
+							}}>
+							Login
+						</a>
+					</ul>
 				</div>
 			</nav>
 			<Corousel />

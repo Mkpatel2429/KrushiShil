@@ -2,7 +2,6 @@ import React from "react";
 import image1 from "../assets/Image1 (1).jpg";
 import image2 from "../assets/Image1 (2).jpg";
 import image3 from "../assets/Image1 (3).jpg";
-import "../css/style.css";
 
 function Cardview() {
 	return (

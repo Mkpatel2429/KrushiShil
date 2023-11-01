@@ -37,8 +37,14 @@ const Soilcal = () => {
 					/>
 				</div>
 				<button
+					style={{
+						marginLeft: "650px",
+						marginBottom: "30px",
+						marginTop: "0",
+						display: "flex",
+					}}
 					type="submit"
-					class="btn btn-primary"
+					class="btn btn-outline-success btn-lg"
 					onClick={countFertilizerAmount}>
 					Submit
 				</button>

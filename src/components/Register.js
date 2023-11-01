@@ -1,6 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Register() {
+	const [fullname, setFullname] = useState("");
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log(fullname, email, password);
+		fetch("http://localhost:5000/Register", {
+			method: "POST",
+			crossDomain: true,
+			headers: {
+				"Content-Type": "application/json",
+				Accept: "application/json",
+				"Access-Control-Allow-Origin": "*",
+			},
+			body: JSON.stringify({
+				fullname,
+				email,
+				password,
+			}),
+		})
+			.then((res) => res.json())
+			.then((data) => {
+				// console.log(data, "UserDetails");
+				if (data.status == "ok") {
+					alert("Register Successfull");
+					window.location.href = "/Login";
+				} else {
+					alert("Register Unsuccessfull");
+				}
+			});
+	};
+
 	return (
 		<div>
 			<h1
@@ -22,7 +55,7 @@ function Register() {
 							/>
 						</div>
 						<div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-							<form>
+							<form onSubmit={handleSubmit}>
 								<div className="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
 									<p
 										className="lead fw-normal mb-0 me-3"
@@ -63,6 +96,8 @@ function Register() {
 										id="form3Example3"
 										className="form-control form-control-lg"
 										placeholder="Enter a Your FullName"
+										onChange={(e) => setFullname(e.target.value)}
+										required
 									/>
 								</div>
 
@@ -72,6 +107,8 @@ function Register() {
 										id="form3Example4"
 										className="form-control form-control-lg"
 										placeholder="Enter a Email ID"
+										onChange={(e) => setEmail(e.target.value)}
+										required
 									/>
 								</div>
 								<div className="form-outline mb-3">
@@ -80,12 +117,14 @@ function Register() {
 										id="form3Example4"
 										className="form-control form-control-lg"
 										placeholder="Enter a Password"
+										onChange={(e) => setPassword(e.target.value)}
+										required
 									/>
 								</div>
 
 								<div className="text-center text-lg-start mt-4 pt-2">
 									<button
-										type="button"
+										type="submit"
 										className="btn btn-outline-success btn-lg"
 										style={{
 											paddingLeft: "2.5rem",

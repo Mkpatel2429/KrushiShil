@@ -5,48 +5,48 @@ function Footer() {
 	return (
 		<div className="footer">
 			<footer
-				class="text-center text-lg-start text-dark"
+				className="text-center text-lg-start text-dark"
 				style={{ backgroundColor: "#ECEFF1" }}>
 				<section
-					class="d-flex justify-content-between p-4 text-dark"
+					className="d-flex justify-content-between p-4 text-dark"
 					style={{ backgroundColor: "rgb(102, 188, 102)" }}>
-					<div class="me-5">
+					<div className="me-5">
 						<span>Get connected with us on social networks:</span>
 					</div>
 
 					<div>
-						<a href="/" class="text-white me-4">
-							<i class="fab fa-facebook-f"></i>
+						<a href="/" className="text-white me-4">
+							<i className="fab fa-facebook-f"></i>
 						</a>
-						<a href="/" class="text-white me-4">
-							<i class="fab fa-twitter"></i>
+						<a href="/" className="text-white me-4">
+							<i className="fab fa-twitter"></i>
 						</a>
-						<a href="/" class="text-white me-4">
-							<i class="fab fa-google"></i>
+						<a href="/" className="text-white me-4">
+							<i className="fab fa-google"></i>
 						</a>
-						<a href="/" class="text-white me-4">
-							<i class="fab fa-instagram"></i>
+						<a href="/" className="text-white me-4">
+							<i className="fab fa-instagram"></i>
 						</a>
-						<a href="/" class="text-white me-4">
-							<i class="fab fa-linkedin"></i>
+						<a href="/" className="text-white me-4">
+							<i className="fab fa-linkedin"></i>
 						</a>
-						<a href="/" class="text-white me-4">
-							<i class="fab fa-github"></i>
+						<a href="/" className="text-white me-4">
+							<i className="fab fa-github"></i>
 						</a>
 					</div>
 				</section>
 
-				<section class="">
-					<div class="container text-center text-md-start mt-5">
-						<div class="row mt-3">
-							<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+				<section className="">
+					<div className="container text-center text-md-start mt-5">
+						<div className="row mt-3">
+							<div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 								<h6
-									class="text-uppercase fw-bold"
+									className="text-uppercase fw-bold"
 									style={{ color: "Darkgreen" }}>
 									Company name
 								</h6>
 								<hr
-									class="mb-4 mt-0 d-inline-block mx-auto"
+									className="mb-4 mt-0 d-inline-block mx-auto"
 									style={{
 										width: "60px",
 										backgroundColor: "rgb(122, 242, 122)",
@@ -60,14 +60,14 @@ function Footer() {
 								</p>
 							</div>
 
-							<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+							<div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 								<h6
-									class="text-uppercase fw-bold"
+									className="text-uppercase fw-bold"
 									style={{ color: "Darkgreen" }}>
 									Products
 								</h6>
 								<hr
-									class="mb-4 mt-0 d-inline-block mx-auto"
+									className="mb-4 mt-0 d-inline-block mx-auto"
 									style={{
 										width: "60px",
 										backgroundColor: "rgb(122, 242, 122)",
@@ -75,35 +75,35 @@ function Footer() {
 									}}
 								/>
 								<p>
-									<a href="#!" class="text-dark">
+									<a href="#!" className="text-dark">
 										MDBootstrap
 									</a>
 								</p>
 								<p>
-									<a href="#!" class="text-dark">
+									<a href="#!" className="text-dark">
 										MDWordPress
 									</a>
 								</p>
 								<p>
-									<a href="#!" class="text-dark">
+									<a href="#!" className="text-dark">
 										BrandFlow
 									</a>
 								</p>
 								<p>
-									<a href="#!" class="text-dark">
+									<a href="#!" className="text-dark">
 										Bootstrap Angular
 									</a>
 								</p>
 							</div>
 
-							<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+							<div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 								<h6
-									class="text-uppercase fw-bold"
+									className="text-uppercase fw-bold"
 									style={{ color: "Darkgreen" }}>
 									Useful links
 								</h6>
 								<hr
-									class="mb-4 mt-0 d-inline-block mx-auto"
+									className="mb-4 mt-0 d-inline-block mx-auto"
 									style={{
 										width: "60px",
 										backgroundColor: "rgb(122, 242, 122)",
@@ -111,35 +111,35 @@ function Footer() {
 									}}
 								/>
 								<p>
-									<a href="#!" class="text-dark">
+									<a href="#!" className="text-dark">
 										Your Account
 									</a>
 								</p>
 								<p>
-									<a href="#!" class="text-dark">
+									<a href="#!" className="text-dark">
 										Become an Affiliate
 									</a>
 								</p>
 								<p>
-									<a href="#!" class="text-dark">
+									<a href="#!" className="text-dark">
 										Shipping Rates
 									</a>
 								</p>
 								<p>
-									<a href="#!" class="text-dark">
+									<a href="#!" className="text-dark">
 										Help
 									</a>
 								</p>
 							</div>
 
-							<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+							<div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 								<h6
-									class="text-uppercase fw-bold"
+									className="text-uppercase fw-bold"
 									style={{ color: "Darkgreen" }}>
 									Contact
 								</h6>
 								<hr
-									class="mb-4 mt-0 d-inline-block mx-auto"
+									className="mb-4 mt-0 d-inline-block mx-auto"
 									style={{
 										width: "60px",
 										backgroundColor: "rgb(122, 242, 122)",
@@ -147,16 +147,16 @@ function Footer() {
 									}}
 								/>
 								<p>
-									<i class="fas fa-home mr-3"></i> New York, NY 10012, US
+									<i className="fas fa-home mr-3"></i> New York, NY 10012, US
 								</p>
 								<p>
-									<i class="fas fa-envelope mr-3"></i> info@example.com
+									<i className="fas fa-envelope mr-3"></i> info@example.com
 								</p>
 								<p>
-									<i class="fas fa-phone mr-3"></i> + 01 234 567 88
+									<i className="fas fa-phone mr-3"></i> + 01 234 567 88
 								</p>
 								<p>
-									<i class="fas fa-print mr-3"></i> + 01 234 567 89
+									<i className="fas fa-print mr-3"></i> + 01 234 567 89
 								</p>
 							</div>
 						</div>
@@ -164,11 +164,11 @@ function Footer() {
 				</section>
 
 				<div
-					class="text-center p-3"
+					className="text-center p-3"
 					style={{ backgroundColor: "rgb(102, 188, 102)" }}>
 					© 2023 Copyright:
 					<a
-						class="text-dark"
+						className="text-dark"
 						href="https://mdbootstrap.com/"
 						style={{ color: "Darkgreen" }}>
 						SoilToSeeds
