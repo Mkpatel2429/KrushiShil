@@ -4,6 +4,7 @@ function Register() {
 	const [fullname, setFullname] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const [userType, setUserType] = useState("");
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -20,6 +21,7 @@ function Register() {
 				fullname,
 				email,
 				password,
+				userType,
 			}),
 		})
 			.then((res) => res.json())
@@ -30,6 +32,14 @@ function Register() {
 					window.location.href = "/Login";
 				} else {
 					alert("Register Unsuccessfull");
+				}
+				const AdminEmail = email.endsWith("gov.in");
+				const UniversityEmail = email.endsWith("University.in");
+				if (
+					(data.userType == "Admin" && data.email == "AdminEmail") ||
+					(data.userType == "University" && data.email == "UniversityEmail")
+				) {
+					alert("Email id is not valid");
 				}
 			});
 	};
@@ -90,6 +100,31 @@ function Register() {
 									<p className="text-center fw-bold mx-3 mb-0">Or</p>
 								</div>
 
+								<div>
+									Register As
+									<input
+										type="radio"
+										name="UserType"
+										value="User"
+										onChange={(e) => setUserType(e.target.value)}
+									/>
+									User
+									<input
+										type="radio"
+										name="UserType"
+										value="Admin"
+										onChange={(e) => setUserType(e.target.value)}
+									/>
+									Admin
+									<input
+										type="radio"
+										name="UserType"
+										value="University"
+										onChange={(e) => setUserType(e.target.value)}
+									/>
+									University
+								</div>
+
 								<div className="form-outline mb-3">
 									<input
 										type="text"
@@ -114,7 +149,6 @@ function Register() {
 								<div className="form-outline mb-3">
 									<input
 										type="password"
-										id="form3Example4"
 										className="form-control form-control-lg"
 										placeholder="Enter a Password"
 										onChange={(e) => setPassword(e.target.value)}

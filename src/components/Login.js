@@ -22,10 +22,15 @@ function Login() {
 		})
 			.then((res) => res.json())
 			.then((data) => {
-				if (data.status === "ok") {
+				if (data.status == "ok") {
 					alert("Login Successfull");
+					window.localStorage.setItem("token", data.data);
+					window.localStorage.setItem("email", email);
+					window.localStorage.setItem("LoggedIn", true);
+					window.location.href = "/Userprofile";
 				} else {
 					alert("Login Unsuccessfull");
+					window.localStorage.setItem("LoggedIn", false);
 				}
 			});
 	};
@@ -100,7 +105,6 @@ function Login() {
 								<div className="form-outline mb-3">
 									<input
 										type="password"
-										id="form3Example4"
 										className="form-control form-control-lg"
 										placeholder="Enter a Password"
 										onChange={(e) => setPassword(e.target.value)}
