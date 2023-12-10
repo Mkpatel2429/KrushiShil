@@ -4,6 +4,20 @@ import UniversityPage from "./Universitypage";
 import UserPage from "./Userpage";
 
 function Userprofile() {
+	// const user = window.localStorage.getItem("LoggedIn");
+	// const history = useNavigate();
+
+	// useEffect(() => {
+	// 	if (!user) {
+	// 		history("/Login");
+	// 	} else {
+	// 		window.addEventListener("beforeunload", (ev) => {
+	// 			ev.preventDefault();
+	// 			return window.localStorage.clear();
+	// 		});
+	// 	}
+	// }, []);
+
 	const [userData, setUserData] = useState("");
 	const [admin, setAdmin] = useState(false);
 	const [University, setUniversity] = useState(false);

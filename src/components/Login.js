@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbar from "./Navbar";
 
 function Login() {
 	const [email, setEmail] = useState("");
@@ -37,6 +38,7 @@ function Login() {
 
 	return (
 		<div>
+			<Navbar />
 			<h1
 				style={{
 					paddingTop: "31px",
@@ -128,7 +130,7 @@ function Login() {
 										</label>
 									</div>
 									<a
-										href="#!"
+										href="/reset"
 										className="text-body"
 										style={{ color: "darkgreen" }}>
 										Forgot password?

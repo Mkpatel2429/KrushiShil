@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "M:/CP-3/soiltoseed/src/assets/logo.png";
+import logo from "../assets/logo.png";
 
 function Navbar() {
 	const isLoggedin = window.localStorage.getItem("LoggedIn");
 	const userEmail = window.localStorage.getItem("email");
 	const logout = () => {
-		window.location.href = "/";
+		window.location.href = "/Login";
 		window.localStorage.clear();
 	};
 	return (
@@ -33,18 +33,18 @@ function Navbar() {
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav mr-auto">
 						<li className="nav-item">
-							<a className="nav-link active" aria-current="page" href="/Home">
+							<a className="nav-link active" aria-current="page" href="/">
 								Home
 							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="/AboutUs">
-								About Us
+								About
 							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="/ContactUs" tabindex="-1">
-								Contact Us
+								Contact
 							</a>
 						</li>
 
@@ -53,6 +53,11 @@ function Navbar() {
 								<li className="nav-item">
 									<a className="nav-link" href="/Userprofile/SeedData">
 										Latest Seeds
+									</a>
+								</li>
+								<li className="nav-item">
+									<a className="nav-link" href="/event/data">
+										Events
 									</a>
 								</li>
 								<div className="btn-group" style={{ marginLeft: "680px" }}>
@@ -68,15 +73,26 @@ function Navbar() {
 										<span className="sr-only">Toggle Dropdown</span>
 									</button>
 									<div className="dropdown-menu">
-										<a className="dropdown-item" href="#">
-											Action
+										<a className="dropdown-item" href="/">
+											Profile
 										</a>
-										<a className="dropdown-item" href="#">
-											Another action
+										<a className="dropdown-item" href="/Userprofile/Lobby">
+											Video Call
 										</a>
-										<a className="dropdown-item" href="#">
-											Something else here
+										<a className="dropdown-item" href="/Userprofile/SeedData">
+											Latest Seeds
 										</a>
+										{userEmail.endsWith("university.ac.in") ? (
+											<>
+												<li className="nav-item">
+													<a className="dropdown-item" href="/event/form">
+														AddEvent
+													</a>
+												</li>
+											</>
+										) : (
+											" "
+										)}
 										<div className="dropdown-divider"></div>
 										<a className="dropdown-item" onClick={logout}>
 											Logout

@@ -1,8 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 function Contactpage() {
 	return (
 		<div>
+			<Navbar />
 			<section class="vh-50">
 				<h2
 					class="h1-responsive font-weight-bold text-center my-4"

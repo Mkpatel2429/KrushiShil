@@ -4,14 +4,10 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 function Universitypage() {
-	const logout = () => {
-		window.location.href = "/";
-		window.localStorage.clear();
-	};
 	return (
 		<div>
 			<Navbar />
-			<h1>Universitypage</h1>
+			<h1 style={{ color: "darkgreen", marginTop: "30px" }}>Universitypage</h1>
 			<Universitydata />
 			<Footer />
 		</div>

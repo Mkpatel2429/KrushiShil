@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/style.css";
+import "../index.js";
 
 function Footer() {
 	return (
@@ -74,26 +75,6 @@ function Footer() {
 										height: "2px",
 									}}
 								/>
-								<p>
-									<a href="#!" className="text-dark">
-										MDBootstrap
-									</a>
-								</p>
-								<p>
-									<a href="#!" className="text-dark">
-										MDWordPress
-									</a>
-								</p>
-								<p>
-									<a href="#!" className="text-dark">
-										BrandFlow
-									</a>
-								</p>
-								<p>
-									<a href="#!" className="text-dark">
-										Bootstrap Angular
-									</a>
-								</p>
 							</div>
 
 							<div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">

@@ -3,6 +3,7 @@ import "../css/About.css";
 import img1 from "../assets/avatar-1.webp";
 import img2 from "../assets/avatar-2.webp";
 import img3 from "../assets/avatar-3.webp";
+import Navbar from "./Navbar";
 function Aboutuspage() {
 	return (
 		<div>

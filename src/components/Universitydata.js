@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbar from "./Navbar";
 
 function Universitydata() {
 	const [Uname, setUniversityName] = useState("");
@@ -38,12 +39,13 @@ function Universitydata() {
 	return (
 		<div>
 			<form
-				className="mx-auto col-10 col-md-8 col-lg-6 my-5 border border-5 rounded-2"
+				className="mx-auto col-10 col-md-8 col-lg-6 my-5 rounded-2 p-4 shadow-lg bg-light"
 				onSubmit={handleSubmit}>
 				<div className="form-group">
-					<label for="exampleFormControlInput1">University Name</label>
+					<label for="exampleFormControlInput1">Krushi Center Name</label>
 					<input
 						type="input"
+						style={{ margin: "10px" }}
 						className="form-control"
 						id="exampleFormControlInput1"
 						onChange={(e) => setUniversityName(e.target.value)}
@@ -51,9 +53,10 @@ function Universitydata() {
 					/>
 				</div>
 				<div className="form-group">
-					<label for="exampleFormControlInput1">University ID</label>
+					<label for="exampleFormControlInput1">Krushi Center ID</label>
 					<input
 						type="id"
+						style={{ margin: "10px" }}
 						className="form-control"
 						id="exampleFormControlInput1"
 						onChange={(e) => setUniversityId(e.target.value)}
@@ -64,6 +67,7 @@ function Universitydata() {
 					<label for="exampleFormControlInput1">Seed Name</label>
 					<input
 						type="input"
+						style={{ margin: "10px" }}
 						className="form-control"
 						id="exampleFormControlInput1"
 						onChange={(e) => setSeedName(e.target.value)}
@@ -73,6 +77,7 @@ function Universitydata() {
 				<div className="form-group">
 					<label for="exampleFormControlTextarea1">Seed Information</label>
 					<textarea
+						style={{ margin: "10px" }}
 						className="form-control"
 						id="exampleFormControlTextarea1"
 						rows="3"
@@ -83,6 +88,7 @@ function Universitydata() {
 					<label for="exampleFormControlFile1">Example file input</label>
 					<input
 						type="file"
+						style={{ margin: "10px" }}
 						className="form-control-file"
 						id="exampleFormControlFile1"
 						onChange={(e) => setSeedProof(e.target.value)}
@@ -90,7 +96,10 @@ function Universitydata() {
 					/>
 				</div>
 				<div className="form-group">
-					<button className="btn btn-outline-success" type="submit">
+					<button
+						className="btn btn-outline-success"
+						type="submit"
+						style={{ margin: "10px" }}>
 						Submit
 					</button>
 				</div>
